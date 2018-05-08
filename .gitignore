@@ -1,3 +1,5 @@
 
 catch-of-the-day/node_modules/
 \.DS_Store
+
+catch-of-the-day/package-lock\.json
