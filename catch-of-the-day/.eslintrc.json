@@ -1,0 +1,25 @@
+{
+    "env": {
+        "es6": true,
+        "browser": true
+    },
+    "extends": "airbnb",
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "no-console": 0,
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "indent": ["error", 2],
+        "quotes": 0,
+        "jsx-a11y/accessible-emoji": 0,
+        "arrow-parens": 0,
+        "react/prefer-stateless-function": 0,
+        "react/prop-types": 0,
+        "react/no-did-mount-set-state": 0,
+        "object-shorthand": 0,
+        "object-curly-newline": 0,
+        "no-mixed-operators": 0
+    }
+}
