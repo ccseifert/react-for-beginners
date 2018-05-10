@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Header from "./Header";
 import Order from "./Order";
 import Inventory from "./Inventory";
@@ -7,6 +8,14 @@ import Fish from "./Fish";
 import base from "../base";
 
 class App extends React.Component {
+  static propTypes = {
+    match: PropTypes.shape({
+      params: PropTypes.shape({
+        storeId: PropTypes.number,
+      }),
+    }),
+  };
+
   state = {
     fishes: {},
     order: {},
