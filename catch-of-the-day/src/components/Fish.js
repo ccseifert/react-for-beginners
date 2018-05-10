@@ -5,14 +5,14 @@ import { formatPrice } from "../helpers";
 class Fish extends React.Component {
   static propTypes = {
     details: PropTypes.shape({
-      image: PropTypes.string,
-      name: PropTypes.string,
-      desc: PropTypes.string,
-      status: PropTypes.string,
-      price: PropTypes.number,
-    }),
-    index: PropTypes.string,
-    addToOrder: PropTypes.func,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+    }).isRequired,
+    index: PropTypes.string.isRequired,
+    addToOrder: PropTypes.func.isRequired,
   };
 
   render() {

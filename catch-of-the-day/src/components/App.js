@@ -11,9 +11,9 @@ class App extends React.Component {
   static propTypes = {
     match: PropTypes.shape({
       params: PropTypes.shape({
-        storeId: PropTypes.number,
-      }),
-    }),
+        storeId: PropTypes.number.isRequired,
+      }).isRequired,
+    }).isRequired,
   };
 
   state = {

@@ -6,14 +6,14 @@ import { formatPrice } from "../helpers";
 class Order extends React.Component {
   static propTypes = {
     fishes: PropTypes.shape({
-      image: PropTypes.string,
-      name: PropTypes.string,
-      desc: PropTypes.string,
-      status: PropTypes.string,
-      price: PropTypes.number,
-    }),
-    order: PropTypes.object,
-    removeFromOrder: PropTypes.func,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+    }).isRequired,
+    order: PropTypes.object.isRequired,
+    removeFromOrder: PropTypes.func.isRequired,
   };
 
   renderOrder = key => {

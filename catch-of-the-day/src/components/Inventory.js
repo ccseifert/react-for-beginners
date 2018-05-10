@@ -16,6 +16,20 @@ class Inventory extends React.Component {
     updateFish: PropTypes.func,
     deleteFish: PropTypes.func,
     loadSampleFishes: PropTypes.func,
+      image: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      desc: PropTypes.string.isRequired,
+      status: PropTypes.string.isRequired,
+      price: PropTypes.numberv,
+    }).isRequired,
+    addFish: PropTypes.func.isRequired,
+    updateFish: PropTypes.func.isRequired,
+    deleteFish: PropTypes.func.isRequired,
+    loadSampleFishes: PropTypes.func.isRequired,
+  };
+
+  authenticate = () => {
+    alert("yay");
   };
 
   render() {
